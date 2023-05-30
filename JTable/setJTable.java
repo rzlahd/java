@@ -17,6 +17,7 @@ private void setJTable() {
     TBuku.getColumnModel().getColumn(0).setPreferredWidth(30);
     TBuku.getColumnModel().getColumn(1).setPreferredWidth(100);
     TBuku.getColumnModel().getColumn(2).setPreferredWidth(200);
-
-    getData();
+    // Tambah Data Row
+    Object Data[] = {no, kode, judul, pengarang, penerbit, tahun, status};
+    tabModel.addRow(Data);
 }
